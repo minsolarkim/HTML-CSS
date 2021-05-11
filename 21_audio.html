@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>audio 태그</title>
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<h2>소리파일 재생 audio 태그</h2>
+    <h4>방법1</h4>
+    <audio controls autoplay loop>
+        <source src = "files/old_pop.mp3" type = "audio/mpeg">
+        <!-- 타입 지정 꼭 해주기!!! mp3는 mpeg임 (기억하기)-->
+    </audio>
+    <hr>
+    <h4>방법2</h4>
+    <audio controls src = "files/old_pop.mp3" type = "audio/mpeg">
+        음악플레이(브라우저가 오디오 처리를 못하면 표시)
+    </audio>
+    
+    <!-- video도 똑같다! 대신 화면사이즈 지정해주기-->
+</body>
+</html>

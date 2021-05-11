@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>테이블 로우, 컬럼 합하기</title>
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+    <h1>테이블(표) row, col 합해서 보기</h1>
+	<h3>테이블 4 x 3 (four by three)</h3>
+    <p>rowspan: 줄(row)단위 합하기<br>colspan : 컬럼(column) 단위 합하기</p>
+    <table border> <!--row 4개 먼저, col3개 먼저 만들어놓고 실행하는 게 나을 수도..!
+    아니다! 첫번째꺼만 th 그 다음부턴 td-->
+        <tr>
+            <th>row1, col1</th>
+            <th>row1, col2</th>
+            <th>row1, col3</th>
+        </tr>
+        <tr>
+            <td>row2, col1</td>
+            <td>row2, col2</td>
+            <td rowspan = "2">row2, col3</td><!--rowspan적용할 위치-->
+            
+        </tr>
+        <tr>
+            <td>row3, col1</td>
+            <td>row3, col2</td>
+            <!--<td>row3, col3</td> rowspan하면서 얘기 밀려 나감-->
+        </tr>
+        <tr>
+            <td colspan="2">row4, col1</td><!--colspan적용할 위치??-->
+            <!--<td>row4, col2</td> colspan하면서 밀려 나오기 때문에 주석처리-->
+            <td>row4, col3</td>
+        </tr>
+        
+    </table>
+    
+    
+    
+</body>
+</html>

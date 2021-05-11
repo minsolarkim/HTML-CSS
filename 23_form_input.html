@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form input</title>
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<h2>HTML form input 태그</h2>
+    <form>
+    <fieldset> <!--프레임 네모-->
+    <!--fieldset : 써도 되고 안 써도 된다. 있다는 것만 알아두기-->
+        <legend> 로그인 정보</legend>
+        아이디 : <input type = "text" name = "userid" placeholder = "아이디를 작성하시오 "><br>
+        패스워드 : <input type = "password" name = "password" placeholder = "암호(영문,숫자 5~20) ">
+    </fieldset>
+    <fieldset>
+        <legend>가입자정보</legend>
+        성명 : <input type = "text" name ="name"><br>
+        나이 : <input type = "number" name = "age" value = "20" min = "1" max = "150">
+        <!--value 속성해주면 디폴트값 설정 후 위아래로 스크롤 가능-->
+        전화번호 : <input type = "tel" name = "tel"><br>
+        이메일 : <input type="email" name = "email"><br>
+        <!-- type = email 이면 @ 있나 없나만 확인해줌-->
+        생일 : <input type = "date" name = "birth" value = "2000-01-01"><br>
+        좋아하는 색 : <input type = "color" name = "color">
+    </fieldset>
+        <input type = "submit" value = "전송(요청)">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
