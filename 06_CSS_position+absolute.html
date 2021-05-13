@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>position: relative</title>
+    <style>
+        div {
+            width:200px; height: 200px;
+            border: 2px solid black;
+            position: absolute; 
+            /* relative와의 다르게 absolute는 기준선이 저 위에 선?이다 --브라우저 바디영역 */
+        }
+        #div1 {
+            background-color: red;
+            top: -50px;
+            left: 50px; /*우측으로 50 but absolute 이기 때문에 기준이 브라우저 바디영역*/ 
+        }
+        #div2 {
+            background-color: green;
+            left:200px;
+            top: 200px;
+        }
+        #div3 {
+            background-color: blue;
+            right: 20px; /*브라우저 기준 오른쪽*/ 
+            bottom: 20px; /*아래쪽에서 부터 !!! */
+        }
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<h3>3차원 높이의 개념 적용</h3>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+</body>
+</html>

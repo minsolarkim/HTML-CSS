@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>position: relative</title>
+    <style>
+        div {
+            width:200px; height: 200px;
+            border: 2px solid black;
+            position: relative; 
+            /* 디폴트 값 - static */
+            /* 전체를 차지하는 block이지만 순서대로? */
+        }
+        #div1 {
+            background-color: red;
+            left: 100px; 
+            /* left: -100px; 이러면 원래위치에서 좌측으로 이동 */
+        }
+        #div2 {
+            background-color: green;
+            left: -100px; 
+        }
+        #div3 {
+            background-color: blue;
+            left: 200px; 
+            top: 100px;
+            /* 이것도 +양수이면 아래로 -이면 위로 이동 */
+        }
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<h3>3차원 높이의 개념 적용</h3>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+</body>
+</html>

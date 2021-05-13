@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 메뉴만들기 (실습)</title>
+    <style>
+        /* * { margin: 10px; padding: 0;} */
+        ul {
+            list-style-type: none;
+            margin: 30px; 
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid white;
+        }
+        li {
+            float: left;
+            border: 1px solid white;
+            width: 22%;
+        }
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #ddd;
+            text-align: center;
+        }
+        li a:hover {
+            background-color: #333;
+            color: white;
+        }
+        li 
+        .active {
+            background-color: coral;
+        }
+        a {
+            background-color: #444;
+        }
+        /* #grid{
+            display: grid;
+        } */
+        div {
+            display: grid;
+        }
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<nav>
+        <!-- menu역할을 할 ul 태그 들어올 자리  -->
+        <ul>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

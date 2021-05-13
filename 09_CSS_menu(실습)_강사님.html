@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 메뉴만들기 (실습)</title>
+    <style>
+        
+        nav ul { /* 전체 리스트*/
+            /* border: 1px solid blue; --이제 쓸 필요 없음*/
+            list-style-type: none ;
+            /* 앞에 분리기호 동그라미 같은거  */
+            margin: 0; padding: 0;
+            background-color: #444;
+            overflow: hidden; /*??무슨의미 일까낭??*/
+        }
+        nav li { /*리스트 하나하나 */
+            float: left; /*나란히 하게 하는 것 */
+            border-right: 2px solid #999;
+            /* 오른쪽에만 border 만들어주기  */
+        }
+        nav a {
+            text-decoration: none;
+            display: block; /*a가 inline 이니까 padding 먹게 하려면 block으로 해줘야함*/
+            padding: 20px 20px; 
+            /*좌우는 먹는데 상하 안 먹음 --왜냐면 a 가 inline 이여서*/
+            font-size: 1.5em;
+            color : white;
+        }
+        /* 이 부분이 중요!!!! nav 안에 a의 active클래스의 hover상태일때  */
+        nav .active, nav a.active:hover{
+            background-color: red;
+        }
+        /* 여기에 not으로 해서도 가능 */
+        nav a:hover{
+            background-color: #aaa;
+        }
+        nav li:last-child{
+            background-color: yellowgreen;
+            float: right;
+            border-left: 2px solid #999;
+            border-right: none;
+            /* 위에 꺼랑 똑같이 해주기 */
+        }
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<nav>
+        <!-- menu역할을 할 ul 태그 들어올 자리  -->
+        <ul>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+            <li>복숭아</li>
+        </ul>
+    </div>
+</body>
+</html>

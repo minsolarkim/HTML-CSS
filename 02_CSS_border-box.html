@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+    <style>
+        * { margin: 0; padding:0;}
+        div {
+            width:300px; height: 200px;
+            background-color: gray;
+            margin:10px;
+        }
+        #div1 {
+            box-sizing : border-box; /*border 기준 크기 설정*/
+            background-color:aquamarine;
+            border: 50px solid black;
+        }
+        #div2 {
+            box-sizing: content-box; /*content 기준 크기 설정*/
+            background-color: aquamarine;
+            border: 50px solid black;
+            padding: 50px
+        }
+        #div3 {
+            background-color: aquamarine;
+/*            border: 50px solid black;*/
+            border-width: 50px;
+            border-color: gray;
+            border-style: solid 
+            /*필수로 지정해줘야 되는 건 border-style! 그래야 구현됨*/
+        }
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<h1>CSS border-box</h1>
+    <div>단순div</div>
+    <div id="div1">div1(border-box)</div>
+    <div id="div2">div2(content-box)</div>
+<!--    이건 부여하지 않은 거와 같다? - content-box-->
+    <div id="div3">div3</div>
+
+    
+
+</body>
+</html>

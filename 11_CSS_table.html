@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS table</title>
+    <style>
+        #page {
+            /* border: 1px solid black; --이건 그냥 봐보려고 한거라 주석처리*/
+            width: 80%;
+            margin: auto; /* auto로 주면 알아서 해준다 ?*/
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            /* 사이사이 띄워져있는 거 보기 싫을때 이거 해주면됨 */
+            /* 캡션 위치는 디폴트가 상단! 하단으로 옮기고 싶으면 */
+            caption-side: bottom;
+        }
+        td, th{
+            border: 2px solid gray;
+        }
+        tr > th:first-child {
+            /* tr의 자녀태그 th을 잡아서 first-child*/
+            width: 15%;
+        }
+        tr > th:nth-child(2) {
+            /* 두번째 자녀 */
+            width: 30%;
+        }
+        tr > th:nth-child(3) {
+            /* 두번째 자녀 */
+            width: 20%;
+        }
+        /* 나머지 하나는 남아있는 거! */
+    </style>
+
+</head>
+<body>
+	<!-- 기본 입력 값 -->
+	<div id="page">
+        <h1>CSS table</h1>
+        <table id="tbl"> 
+            <!-- 이제는 여기다가 border 줄 필요가 없다 -->
+            <caption>테이블의 캡션</caption>
+            <tr>
+                <th>th 1열</th>
+                <th>th 2열</th>
+                <th>th 3열</th>
+                <th>th 4열</th>
+            </tr>
+            <tr>
+                <td>2행, 1열</td>
+                <td>2행, 2열</td>
+                <td>2행, 3열</td>
+                <td>2행, 4열</td>
+            </tr>
+            <tr>
+                <td>3행, 1열</td>
+                <td>3행, 2열</td>
+                <td>3행, 3열</td>
+                <td>3행, 4열</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
